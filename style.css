@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.text-container{
+    filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.3));
+}
+
+.alert{
+    width: 100%;
+    background-color: rgb(128, 128, 238);
+    padding: 10px 20px;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 15px;
+    /* font-weight: 900; */
+    display: none;
+}
