@@ -26,6 +26,19 @@ const firebaseConfig = {
 
     // console.log(name,email,message);
 
+        // Check if any field is empty
+  if (name === "" || email === "" || message === "") {
+    // Show error message
+    document.querySelector('.error').style.display = "block";
+
+    // Remove error message after 3 seconds
+    setTimeout(() => {
+        document.querySelector('.error').style.display = "none";
+    }, 3000);
+
+    return; // Stop form submission
+}
+
     saveMessages(name,email,message);
 
     // enable alert
